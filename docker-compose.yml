@@ -6,13 +6,11 @@ services:
     image: mysql
     ports:
       - "3306:3306"
-    volumes:
-      - ./
     environment:
-      - MYSQL_DATABASE=mysql
-      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE: mydb
+      - MYSQL_ROOT_PASSWORD: root
 
-  mywebapp:
+   webapp:
     container_name: springbootapp
     build:
       context: ./
