@@ -7,10 +7,10 @@ services:
     ports:
       - "3306:3306"
     environment:
-      - MYSQL_DATABASE: mydb
-      - MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: mydb
+      MYSQL_ROOT_PASSWORD: root
 
-   webapp:
+  webapp:
     container_name: springbootapp
     build:
       context: ./
