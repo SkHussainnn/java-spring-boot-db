@@ -9,6 +9,8 @@ services:
     environment:
       MYSQL_DATABASE: mydb
       MYSQL_ROOT_PASSWORD: root
+    volumes:
+       -/opt/mysqldb:var/lib/mysql
 
   webapp:
     container_name: springbootapp
