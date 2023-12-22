@@ -10,7 +10,7 @@ services:
       MYSQL_DATABASE: mydb
       MYSQL_ROOT_PASSWORD: root
     volumes:
-      - /opt/mysqldb:/var/lib/mysql 
+      - /opt/msqldbbk:/var/lib/mysql 
 
   webapp:
     container_name: springbootapp
