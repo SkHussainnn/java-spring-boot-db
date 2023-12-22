@@ -10,7 +10,7 @@ services:
       MYSQL_DATABASE: mydb
       MYSQL_ROOT_PASSWORD: root
     volumes:
-       -/opt/mysqldb:var/lib/mysql
+      - /opt/mysqldb:/var/lib/mysql   # Corrected path and added a colon
 
   webapp:
     container_name: springbootapp
